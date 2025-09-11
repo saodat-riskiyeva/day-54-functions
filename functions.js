@@ -24,3 +24,13 @@ function sumUp2(numbers) {
 const numbers = [1, 2, 4, 5];
 numbers.push(3);
 console.log(sumUp2(numbers)); // 6
+
+function sumUp3(...numbers) {
+  let result = 0;
+  for (const number of numbers) {
+    result += number;
+  }
+  return result;
+}
+
+console.log(sumUp3(1, 1, 1, 1, 1, 1, 1)); // 6
