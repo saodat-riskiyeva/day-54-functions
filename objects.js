@@ -22,8 +22,8 @@ designer.describe();
 manager.describe();
 cook.describe();
 
-const name = ["Max", "Leben"];
+const input = ["Max", "Leben"];
 
-const [firstName, lastName] = name;
+const [firstName, lastName] = input;
 console.log(firstName);
 console.log(lastName);
