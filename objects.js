@@ -22,8 +22,15 @@ designer.describe();
 manager.describe();
 cook.describe();
 
+// Array destructuring
 const input = ["Max", "Leben"];
-
 const [firstName, lastName] = input;
 console.log(firstName);
 console.log(lastName);
+
+// Object destructuring
+const userData = { title: "Sr.Developer", salary: 300000 };
+
+const { title, salary } = userData;
+console.log(title);
+console.log(salary);
