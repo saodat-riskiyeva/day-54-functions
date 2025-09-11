@@ -21,3 +21,9 @@ developer.describe();
 designer.describe();
 manager.describe();
 cook.describe();
+
+const name = ["Max", "Leben"];
+
+const [firstName, lastName] = name;
+console.log(firstName);
+console.log(lastName);
