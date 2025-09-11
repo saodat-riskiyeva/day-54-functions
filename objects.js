@@ -34,3 +34,7 @@ const userData = { title: "Sr.Developer", salary: 300000 };
 const { title, salary } = userData;
 console.log(title);
 console.log(salary);
+
+const { title: jobTitle, salary: jobSalary } = userData; // renaming variables
+console.log(jobTitle);
+console.log(jobSalary);
