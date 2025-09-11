@@ -6,7 +6,9 @@ class Job {
   }
 
   describe() {
-    return `I am a ${this.title}, I live in ${this.location} and I earn a salary of $${this.salary}`;
+    console.log(
+      `I am a ${this.title}, I live in ${this.location} and I earn a salary of $${this.salary}`
+    );
   }
 }
 
@@ -19,7 +21,7 @@ const cook = new Job("Cook", "Los Angeles", 80000);
 // console.log(manager);
 // console.log(cook);
 
-console.log(developer.describe());
-console.log(designer.describe());
-console.log(manager.describe());
-console.log(cook.describe());
+developer.describe();
+designer.describe();
+manager.describe();
+cook.describe();
