@@ -1,6 +1,6 @@
 const fs = require("fs/promises");
 
-function readFile() {
+async function readFile() {
   let fileData;
 
   //   fs.readFile("data.txt", function (error, fileData) {
@@ -10,14 +10,15 @@ function readFile() {
   //     // start another async task that sends the data to a database
   //   });
 
-  fs.readFile("data.txt")
-    .then(function (fileData) {
-      console.log("File parsing is done!");
-      console.log(fileData.toString());
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+  try {
+    fileData = await fs.readFile("data.txt");
+  } catch (error) {
+    console.log(error);
+    return;
+  }
+
+  console.log("File parsing is done!");
+  console.log(fileData.toString());
 
   console.log("Hi there!");
 }
