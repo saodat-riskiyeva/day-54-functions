@@ -10,10 +10,14 @@ function readFile() {
   //     // start another async task that sends the data to a database
   //   });
 
-  fs.readFile("data.txt").then(function (fileData) {
-    console.log("File parsing is done!");
-    console.log(fileData.toString());
-  });
+  fs.readFile("data.txt")
+    .then(function (fileData) {
+      console.log("File parsing is done!");
+      console.log(fileData.toString());
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 
   console.log("Hi there!");
 }
